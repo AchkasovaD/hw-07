@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-link">
+            <img src="images/logo.svg" alt="logo" width="50" height="50" />
+          </a>
+          <h1 class="brand-title"><strong>BRAND NAME</strong></h1>
+          <div class="header-icons">
+            <a href="index.html" class="icon-link">
+              <img src="images/account.svg" alt="home" width="34" height="37" />
+            </a>
+            <a href="#" class="icon-link">
+              <img src="images/shop.svg" alt="shop" width="34" height="34" />
+            </a>
+            <a href="#" class="icon-link">
+              <img
+                src="images/bourger.svg"
+                alt="burger menu"
+                width="34"
+                height="25"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="lab-section">
+        <div class="container">
+          <div class="lab-grid">
+            <!-- Завдання 1 -->
+            <div class="lab-card">
+              <h3>Пошук останіх замовлень</h3>
+              <div class="input-group">
+                <input
+                  type="number"
+                  id="limitInput"
+                  placeholder="Кількість замовлень"
+                  value="5"
+                  min="1"
+                />
+                <button id="fetchBtn" class="btn" style="margin-top: 0">
+                  Завантажити <br />
+                  остані замовлення
+                </button>
+              </div>
+              <div id="postsContainer" class="lab-list">
+                <div class="info-placeholder">
+                  Натисніть кнопку для завантаження
+                </div>
+              </div>
+              <button
+                id="loadMoreBtn"
+                class="btn load-more-btn"
+                style="display: none"
+              >
+                Інші замовлення
+              </button>
+            </div>
+
+            <!-- Завдання 2 -->
+            <div class="lab-card">
+              <h3>Замовлення</h3>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="newTaskInput"
+                  placeholder="Нове замовлення..."
+                />
+                <button id="addTaskBtn" class="btn" style="margin-top: 0">
+                  Додати
+                </button>
+              </div>
+              <div class="filter-group">
+                <button data-filter="all" class="filter-btn active">Всі</button>
+                <button data-filter="active" class="filter-btn">Активні</button>
+                <button data-filter="completed" class="filter-btn">
+                  Завершені
+                </button>
+              </div>
+              <div id="tasksContainer" class="lab-list">
+                <div class="info-placeholder">Завантаження задач...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3 class="footer-title">BRAND NAME</h3>
+            <p class="footer-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+            <address class="footer-address">
+              121 King Street, Melbourne 3000<br />
+              +12 3 0000 0000<br />
+              <a href="mailto:contact@brandemail.com">contact@brandemail.com</a>
+            </address>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">SHOPPING</h4>
+            <ul class="footer-links">
+              <li><a href="#">Your cart</a></li>
+              <li><a href="#">Your orders</a></li>
+              <li><a href="#">Compared items</a></li>
+              <li><a href="#">Wishlist items</a></li>
+              <li><a href="#">Shipping detail</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">MORE LINK</h4>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Gift Center</a></li>
+              <li><a href="#">Buying Guides</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Clearance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">PROMO UPDATE</h4>
+            <article class="promo-article">
+              <p class="promo-date">14 May</p>
+              <p class="promo-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="comments">3 comments</p>
+            </article>
+            <article class="promo-article">
+              <p class="promo-date"><strong>15 July</strong></p>
+              <p class="promo-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="comments">3 comments</p>
+            </article>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Brand Registered Name © – All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobilemenu.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/expand.js"></script>
+    <script src="js/ip.js"></script>
+  </body>
+</html>

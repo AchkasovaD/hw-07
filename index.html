@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo-link">
+            <img src="images/logo.svg" alt="logo" width="50" height="50" />
+          </a>
+          <h1 class="brand-title"><strong>BRAND NAME</strong></h1>
+          <div class="header-icons">
+            <a href="ip.html" class="icon-link">
+              <img
+                src="images/account.svg"
+                alt="account"
+                width="34"
+                height="37"
+              />
+            </a>
+            <a href="#" class="icon-link">
+              <img src="images/shop.svg" alt="shop" width="34" height="34" />
+            </a>
+            <a href="#" class="icon-link">
+              <img
+                src="images/bourger.svg"
+                alt="burger menu"
+                width="34"
+                height="25"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="container hero-container">
+          <img
+            src="images/modern_furniture.png"
+            alt="modern furniture"
+            class="hero-image"
+          />
+          <div class="sales_text">
+            <p class="hot-deals-tag"><strong>HOT DEALS THIS WEEK</strong></p>
+            <div class="sales_main-text">
+              <h2 class="sale-title"><strong>SALE 50% OFF</strong></h2>
+              <h2 class="modern-title"><strong>MODERN FURNITURE</strong></h2>
+            </div>
+            <button class="btn">VIEW NOW</button>
+          </div>
+        </div>
+      </section>
+      <section class="section swiper-section">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="images/covvered.png" alt="covvered" />
+                  </div>
+                  <div class="slide-info" id="slideInfo1">
+                    <h3 class="slide-title">Covvered</h3>
+                    <div class="slide-description">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolor suscipit, deleniti in laborum, labore mollitia
+                        dolore beatae dignissimos voluptatem reprehenderit
+                        assumenda facilis tempora, esse tempore impedit corrupti
+                        illum et error? Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Corporis quaerat, natus hic dolore ut
+                        quasi, aperiam magni doloribus eum minima, quidem
+                        tempore ab aliquid in dolores iusto nesciunt adipisci
+                        id. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Minus tempora, error animi expedita vel id, dolore
+                        cumque corrupti nisi sit rerum, cupiditate nesciunt eum.
+                        Totam officia animi nihil inventore quo!
+                      </p>
+                    </div>
+                    <button class="btn-readmore" data-target="slideInfo1">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="images/candle.png" alt="candle" />
+                  </div>
+                  <div class="slide-info" id="slideInfo2">
+                    <h3 class="slide-title">Candle</h3>
+                    <div class="slide-description">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolor suscipit, deleniti in laborum, labore mollitia
+                        dolore beatae dignissimos voluptatem reprehenderit
+                        assumenda facilis tempora, esse tempore impedit corrupti
+                        illum et error? Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Corporis quaerat, natus hic dolore ut
+                        quasi, aperiam magni doloribus eum minima, quidem
+                        tempore ab aliquid in dolores iusto nesciunt adipisci
+                        id. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Minus tempora, error animi expedita vel id, dolore
+                        cumque corrupti nisi sit rerum, cupiditate nesciunt eum.
+                        Totam officia animi nihil inventore quo!
+                      </p>
+                    </div>
+                    <button class="btn-readmore" data-target="slideInfo2">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="images/photo_frzme.png" alt="photo_frame" />
+                  </div>
+                  <div class="slide-info" id="slideInfo3">
+                    <h3 class="slide-title">Metal Photo Frame</h3>
+                    <div class="slide-description">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolor suscipit, deleniti in laborum, labore mollitia
+                        dolore beatae dignissimos voluptatem reprehenderit
+                        assumenda facilis tempora, esse tempore impedit corrupti
+                        illum et error? Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Corporis quaerat, natus hic dolore ut
+                        quasi, aperiam magni doloribus eum minima, quidem
+                        tempore ab aliquid in dolores iusto nesciunt adipisci
+                        id. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Minus tempora, error animi expedita vel id, dolore
+                        cumque corrupti nisi sit rerum, cupiditate nesciunt eum.
+                        Totam officia animi nihil inventore quo!
+                      </p>
+                    </div>
+                    <button class="btn-readmore" data-target="slideInfo3">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section advertising">
+        <div class="container">
+          <div class="advertising-grid">
+            <div class="advertising_element">
+              <img
+                src="images/vintage_chair.png"
+                alt="vintage chair"
+                width="353"
+                height="353"
+              />
+
+              <div class="ad-text">
+                <h3 class="ad-title">INY VINTAGE CHAIR</h3>
+                <button class="btn">VIEW DETAILS</button>
+              </div>
+            </div>
+            <div class="advertising_element vase">
+              <img
+                src="images/terracota_vase.png"
+                alt="terracota vase"
+                width="246"
+                height="368"
+              />
+
+              <div class="ad-text">
+                <h3 class="ad-title">LARGE TERRACOTA VASE</h3>
+                <button class="btn">VIEW DETAILS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products">
+        <div class="container">
+          <ul class="products-grid">
+            <li class="product-card">
+              <img
+                src="images/towel.png"
+                alt="Linen Beach Towel"
+                width="306"
+                height="422"
+              />
+              <p class="product-name">Linen Beach Towel</p>
+              <h3 class="product-price">30$</h3>
+            </li>
+            <li class="product-card">
+              <img
+                src="images/box.png"
+                alt="Square Clear Glass Box"
+                width="306"
+                height="422"
+              />
+              <p class="product-name">Square Clear Glass Box</p>
+              <h3 class="product-price">30$</h3>
+            </li>
+            <li class="product-card">
+              <img
+                src="images/plates.png"
+                alt="4 pack Small Ceramic Plates"
+                width="306"
+                height="422"
+              />
+              <p class="product-name">4 pack Small Ceramic Plates</p>
+              <h3 class="product-price">30$</h3>
+            </li>
+            <li class="product-card">
+              <img
+                src="images/boxL.png"
+                alt="Large Clear Glass Box"
+                width="306"
+                height="422"
+              />
+              <p class="product-name">Large Clear Glass Box</p>
+              <h3 class="product-price">30$</h3>
+            </li>
+            <li class="product-card">
+              <img
+                src="images/placemat.png"
+                alt="Round Jute Placemat"
+                width="306"
+                height="422"
+              />
+              <p class="product-name">Round Jute Placemat</p>
+              <h3 class="product-price">30$</h3>
+            </li>
+            <li class="product-card">
+              <img
+                src="images/basket.png"
+                alt="Metal Wire Basket"
+                width="306"
+                height="422"
+              />
+              <p class="product-name">Metal Wire Basket</p>
+              <h3 class="product-price">30$</h3>
+            </li>
+          </ul>
+          <div class="load-more-wrapper">
+            <button class="btn">LOAD MORE</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter">
+        <div class="container newsletter-container">
+          <div class="newsletter-text">
+            <h2 class="newsletter-title">SING UP FOR OUR NEWSLETTER</h2>
+            <p class="newsletter-subtitle">
+              Subscribe for the latest deals and promotions
+            </p>
+          </div>
+
+          <div class="newsletter-form-wrapper">
+            <form action="#" method="post" class="newsletter-form">
+              <label for="newsletter-email" class="visually-hidden"
+                >Your email address</label
+              >
+              <input
+                type="email"
+                id="newsletter-email"
+                name="email"
+                placeholder="Enter your e-mail address"
+                class="newsletter-input"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" class="btn btn-subscribe">
+                <img
+                  src="images/message.png"
+                  alt="subscribe"
+                  width="21"
+                  height="21"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <h3>Дякуємо за підписку!</h3>
+          <p>На вашу пошту буде надіслано лист-підтвердження.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3 class="footer-title">BRAND NAME</h3>
+            <p class="footer-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+            <address class="footer-address">
+              121 King Street, Melbourne 3000<br />
+              +12 3 0000 0000<br />
+              <a href="mailto:contact@brandemail.com">contact@brandemail.com</a>
+            </address>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">SHOPPING</h4>
+            <ul class="footer-links">
+              <li><a href="#">Your cart</a></li>
+              <li><a href="#">Your orders</a></li>
+              <li><a href="#">Compared items</a></li>
+              <li><a href="#">Wishlist items</a></li>
+              <li><a href="#">Shipping detail</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">MORE LINK</h4>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Gift Center</a></li>
+              <li><a href="#">Buying Guides</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Clearance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">PROMO UPDATE</h4>
+            <article class="promo-article">
+              <p class="promo-date">14 May</p>
+              <p class="promo-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="comments">3 comments</p>
+            </article>
+            <article class="promo-article">
+              <p class="promo-date"><strong>15 July</strong></p>
+              <p class="promo-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="comments">3 comments</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Brand Registered Name © – All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobilemenu.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/expand.js"></script>
+  </body>
+</html>
