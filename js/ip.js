@@ -1,5 +1,4 @@
 (function () {
-  // ------------------- ЗАВДАННЯ 1: POSTS pagination -------------------
   const POSTS_API = "https://jsonplaceholder.typicode.com/posts";
   let currentPage = 1;
   let limit = 5;
@@ -107,7 +106,6 @@
   if (fetchBtn) fetchBtn.addEventListener("click", handleFirstFetch);
   if (loadMoreBtn) loadMoreBtn.addEventListener("click", handleLoadMore);
 
-  // ------------------- ЗАВДАННЯ 2: Менеджер завдань -------------------
   const TODOS_API = "https://jsonplaceholder.typicode.com/todos";
   let allTasks = [];
   let currentFilter = "all";
@@ -163,7 +161,6 @@
       tasksContainer.appendChild(taskDiv);
     });
 
-    // Обробники чекбоксів
     document.querySelectorAll(".task-checkbox").forEach((cb) => {
       cb.addEventListener("change", (e) => {
         const id = parseInt(e.target.dataset.id);
@@ -178,11 +175,9 @@
       });
     });
 
-    // Обробники видалення
     document.querySelectorAll(".delete-task").forEach((btn) => {
       btn.addEventListener("click", async (e) => {
         const id = parseInt(e.target.dataset.id);
-        // Імітація DELETE запиту
         try {
           await fetch(`${TODOS_API}/${id}`, { method: "DELETE" });
         } catch (e) {}
@@ -201,7 +196,7 @@
     }
     const tempId = Date.now();
     const newTask = { id: tempId, title, completed: false };
-    // Імітація POST
+
     try {
       const response = await fetch(TODOS_API, {
         method: "POST",

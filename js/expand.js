@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const infoBlock = document.getElementById(targetId);
       if (infoBlock) {
         infoBlock.classList.toggle("expanded");
-        // Змінюємо текст кнопки
+
         if (infoBlock.classList.contains("expanded")) {
           this.textContent = "Read less";
         } else {
